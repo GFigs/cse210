@@ -28,13 +28,24 @@ class Program
                 currenEntry._prompt = journal.GetPrompt();
                 Console.WriteLine(currenEntry._prompt);
                 currenEntry._response = Console.ReadLine();
-
-                // Aca todavia falta el coso de la fecha
-                journal._entries.Add(currenEntry);
+                currenEntry.GetDate();
+                currenEntry.AddToEntries(journal._entries);
             }
             else if (usersChoice == 2)
             {
                 journal.DisplayEntries();
+            }
+            else if (usersChoice == 3)
+            {
+                Console.Write("What is the filename? ");
+                string filename = Console.ReadLine();
+                journal.LoadEntries(filename);
+            }
+            else if (usersChoice == 4)
+            {
+                Console.Write("What is the filename? ");
+                string filename = Console.ReadLine();
+                journal.SaveEntries(filename);
             }
             else
             {

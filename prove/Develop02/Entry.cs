@@ -10,5 +10,10 @@ public class Entry
     {
         entries.Add(this);
     }
-    // falta metodo para sacar la fecha actual. 
+
+    public void GetDate()
+    {
+        DateTime currentTime = DateTime.Now;
+        this._date = currentTime.ToShortDateString();
+    }
 }
