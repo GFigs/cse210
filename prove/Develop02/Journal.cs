@@ -68,7 +68,7 @@ public class Journal
 
         }
 
-        Console.WriteLine($"Have a nice day. You wrote today {todayEntries} entries. You have a total of {totalEntries}.");
+        Console.WriteLine($"Good bye for now. You wrote today {todayEntries} entries. You have a total of {totalEntries}.");
     }
 
 }
