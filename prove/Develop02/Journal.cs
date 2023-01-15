@@ -52,5 +52,23 @@ public class Journal
             newEntry.AddToEntries(this._entries);
         }
     }
+    public void GoodbyeMessage()
+    {
+        int totalEntries = this._entries.Count();
+        int todayEntries = 0;
+        DateTime currentTime = DateTime.Now;
+        string currentDate = currentTime.ToShortDateString();
+
+        foreach (Entry entry in this._entries)
+        {
+            if (currentDate == entry._date)
+            {
+                todayEntries++;
+            }
+
+        }
+
+        Console.WriteLine($"Have a nice day. You wrote today {todayEntries} entries. You have a total of {totalEntries}.");
+    }
 
 }

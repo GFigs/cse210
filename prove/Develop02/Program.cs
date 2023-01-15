@@ -1,5 +1,5 @@
 using System;
-
+// to exceed the requirements, I added a method to Journal, wich gives a goodbye message saying the total of entries and how many where made that day.
 class Program
 {
     static void Main(string[] args)
@@ -49,7 +49,7 @@ class Program
             }
             else
             {
-                Console.WriteLine("Have a nice day");
+                journal.GoodbyeMessage();
             }
         }
     }
