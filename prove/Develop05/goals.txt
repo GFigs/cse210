@@ -1,0 +1,5 @@
+50
+SimpleGoal:Italia,ir a italia,100,True
+SimpleGoal:alemania,ir a alemania,100,False
+EternalGoal:estudiar,estudiar pue,20
+ChecklistGoal:completar asiganciones,me faltan asiganciones,50,500,5,1
